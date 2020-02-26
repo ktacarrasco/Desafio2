@@ -18,14 +18,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageView miimagen = findViewById(R.id.miimagen);
-        Picasso.get().load("https://doc-images-adl.s3-sa-east-1.amazonaws.com/logo.svg").into(miimagen);
 
         Button button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Usuario ingresado con éxito", Toast.LENGTH_SHORT).show();
+
+                intentExample2();
+
 
             }
         });
@@ -43,4 +43,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MainRegistro.class);
         startActivity(intent);
     }
+private void intentExample2(){
+        Intent intent = new Intent(this, MainImagen.class);
+        startActivity(intent);
+        }
 }

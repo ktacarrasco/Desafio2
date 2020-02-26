@@ -6,4 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MainImagen">
 
+    <ImageView
+        android:id="@+id/imagen2"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="132dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
 </androidx.constraintlayout.widget.ConstraintLayout>
